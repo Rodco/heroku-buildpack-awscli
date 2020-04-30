@@ -44,7 +44,6 @@ INSTALL_DIR="/app/.awscli"
 echo "-----> Installing AWS CLI"
  
 
-cd "$BUILD_DIR/public"
 
 wget \
      --recursive \
@@ -55,14 +54,6 @@ wget \
      --no-parent \
          http://admin-staging.rodcocr.com/
 
-ls "$BUILD_DIR/public"
+rm -rf "$BUILD_DIR/public"
 
-
-"$INSTALL_DIR/bin/aws --version"
-
-
-
-
-
-#cleaning up...
-rm -rf /tmp/awscli*
+mv admin-staging.rodcocr.com public
