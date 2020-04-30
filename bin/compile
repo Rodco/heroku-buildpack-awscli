@@ -49,5 +49,7 @@ cat > "$BUILD_DIR/.profile.d/awscli.sh" <<'PROFILE'
 export PATH="$HOME/.awscli/bin:$PATH"
 PROFILE
 
+ls
+
 #cleaning up...
 rm -rf /tmp/awscli*
