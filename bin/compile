@@ -71,7 +71,7 @@ PROFILE
 
 /app/.awscli/bin/aws s3 sync s3://admin.staging.rodcocr.com "$BUILD_DIR/public"
 
-ls $BUILD_DIR
+ls "$BUILD_DIR/public"
 
 #cleaning up...
 rm -rf /tmp/awscli*
