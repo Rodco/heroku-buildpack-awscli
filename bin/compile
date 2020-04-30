@@ -50,6 +50,7 @@ export PATH="$HOME/.awscli/bin:$PATH"
 PROFILE
 
 ls
+/app/.awscli/bin/aws --version
 
 #cleaning up...
 rm -rf /tmp/awscli*
