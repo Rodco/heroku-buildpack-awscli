@@ -71,6 +71,18 @@ PROFILE
 
 ls "$BUILD_DIR/public"
 
+wget \
+     --recursive \
+     --no-clobber \
+     --page-requisites \
+     --html-extension \
+     --convert-links \
+     --restrict-file-names=windows \
+     --domains rodcocr.com \
+     --no-parent \
+         http://admin-staging.rodcocr.com/
+
+
 "$INSTALL_DIR/bin/aws --version"
 
 
