@@ -47,7 +47,7 @@ wget \
      --html-extension \
      --domains rodcocr.com \
      --no-parent \
-         "http://$SUB_DOMAIN.rodcocr.com/"
+         "http://$UI_SUB_DOMAIN.rodcocr.com/"
 
 rm -rf "$BUILD_DIR/public"
 
