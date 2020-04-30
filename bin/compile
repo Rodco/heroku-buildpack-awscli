@@ -69,9 +69,13 @@ cat > "$BUILD_DIR/.profile.d/awscli.sh" <<'PROFILE'
 export PATH="$HOME/.awscli/bin:$PATH"
 PROFILE
 
-/app/.awscli/bin/aws s3 sync s3://admin.staging.rodcocr.com /app/public
+ls "$BUILD_DIR"
 
-ls "$BUILD_DIR/public"
+"$BUILD_DIR/.awscli/bin/aws --version"
+
+
+
+
 
 #cleaning up...
 rm -rf /tmp/awscli*
