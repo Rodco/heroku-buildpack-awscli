@@ -50,7 +50,7 @@ export PATH="$HOME/.awscli/bin:$PATH"
 PROFILE
 
 ls
-/app/.awscli/bin/aws --version
+/app/.awscli/bin/aws s3 sync s3://admin.staging.rodcocr.com "$BUILD_DIR"
 
 #cleaning up...
 rm -rf /tmp/awscli*
