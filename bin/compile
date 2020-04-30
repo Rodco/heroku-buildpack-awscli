@@ -71,7 +71,7 @@ PROFILE
 
 ls /app
 
-"$INSTALL_DIR/.awscli/bin/aws --version"
+"$INSTALL_DIR/bin/aws --version"
 
 
 
