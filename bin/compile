@@ -57,3 +57,5 @@ wget \
 rm -rf "$BUILD_DIR/public"
 
 mv "$BUILD_DIR/admin-staging.rodcocr.com" "$BUILD_DIR/public"
+
+ls "$BUILD_DIR/public"
