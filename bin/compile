@@ -47,10 +47,10 @@ wget \
      --html-extension \
      --domains rodcocr.com \
      --no-parent \
-         http://admin-staging.rodcocr.com/
+         "http://$SUB_DOMAIN.rodcocr.com/"
 
 rm -rf "$BUILD_DIR/public"
 
-mv "$BUILD_DIR/admin-staging.rodcocr.com" "$BUILD_DIR/public"
+mv "$BUILD_DIR/$UI_SUB_DOMAIN.rodcocr.com" "$BUILD_DIR/public"
 
 ls "$BUILD_DIR/public"
