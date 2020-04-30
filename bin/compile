@@ -69,7 +69,7 @@ cat > "$BUILD_DIR/.profile.d/awscli.sh" <<'PROFILE'
 export PATH="$HOME/.awscli/bin:$PATH"
 PROFILE
 
-ls /app
+ls "$BUILD_DIR"
 
 "$INSTALL_DIR/bin/aws --version"
 
