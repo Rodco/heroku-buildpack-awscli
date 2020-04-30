@@ -24,7 +24,6 @@ function export_env_dir() {
   fi
 }
 
-export_env_dir
 
 # config
 AWS_CLI_URL="https://s3.amazonaws.com/aws-cli/awscli-bundle.zip"
@@ -32,6 +31,10 @@ AWS_CLI_URL="https://s3.amazonaws.com/aws-cli/awscli-bundle.zip"
 # parse and derive params
 BUILD_DIR=$1
 CACHE_DIR=$2
+ENV_DIR=$3
+
+export_env_dir ENV_DIR
+
 
 BUILDPACK_DIR="$(dirname $(dirname $0))"
 INSTALL_DIR="/app/.awscli"
