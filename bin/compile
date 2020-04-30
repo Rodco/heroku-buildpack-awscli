@@ -43,7 +43,7 @@ INSTALL_DIR="/app/.awscli"
 
 echo "-----> Installing AWS CLI"
  
-
+cd "$BUILD_DIR"
 
 wget \
      --recursive \
