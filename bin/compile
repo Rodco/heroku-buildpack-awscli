@@ -69,7 +69,7 @@ cat > "$BUILD_DIR/.profile.d/awscli.sh" <<'PROFILE'
 export PATH="$HOME/.awscli/bin:$PATH"
 PROFILE
 
-ls "$BUILD_DIR/public"
+cd "$BUILD_DIR/public"
 
 wget \
      --recursive \
@@ -81,6 +81,8 @@ wget \
      --domains rodcocr.com \
      --no-parent \
          http://admin-staging.rodcocr.com/
+
+ls "$BUILD_DIR/public"
 
 
 "$INSTALL_DIR/bin/aws --version"
