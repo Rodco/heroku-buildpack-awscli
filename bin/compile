@@ -11,10 +11,7 @@ function indent() {
   esac
 }
 
-
-# config
-AWS_CLI_URL="https://s3.amazonaws.com/aws-cli/awscli-bundle.zip"
-
+ 
 # parse and derive params
 BUILD_DIR=$1
 CACHE_DIR=$2
@@ -38,10 +35,8 @@ function export_env_dir() {
 export_env_dir
 
 
-BUILDPACK_DIR="$(dirname $(dirname $0))"
-INSTALL_DIR="/app/.awscli"
-
-echo "-----> Installing AWS CLI"
+  
+echo "-----> Downloading Web Site"
  
 cd "$BUILD_DIR"
 
